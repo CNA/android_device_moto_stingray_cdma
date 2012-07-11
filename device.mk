@@ -25,6 +25,9 @@ PRODUCT_COPY_FILES += \
     device/moto/stingray_cdma/prop/libril.so:system/lib/libril.so \
     device/moto/stingray_cdma/prop/libpppd_plugin-ril.so:system/lib/libpppd_plugin-ril.so
 
+PRODUCT_PACKAGES += \
+    rild \
+
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
     device/moto/stingray_cdma/overlay device/moto/wingray/overlay
