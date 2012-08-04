@@ -31,5 +31,3 @@ PRODUCT_PACKAGES += \
 # Overrides
 DEVICE_PACKAGE_OVERLAYS := \
     device/moto/stingray_cdma/overlay device/moto/wingray/overlay
-$(call inherit-product-if-exists, vendor/eos/common.mk)
-$(call inherit-product-if-exists, vendor/eos/tablets/common.mk)

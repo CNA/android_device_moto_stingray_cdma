@@ -25,10 +25,6 @@ PRODUCT_PACKAGES := \
         LiveWallpapersPicker \
         VisualizationWallpapers
 
-# Camera
-PRODUCT_PACKAGES += \
-    Camera
-
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
@@ -38,10 +34,5 @@ $(call inherit-product, device/moto/stingray_cdma/device.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_stingray_cdma
 PRODUCT_DEVICE := stingray_cdma
-PRODUCT_BRAND := verizon
-PRODUCT_MODEL := Xoom
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=trygon \
-    BUILD_FINGERPRINT="verizon/trygon/stingray:4.0.4/IMM76L/345519:user/release-keys" \
-    PRIVATE_BUILD_DESC="trygon-user 4.0.4 IMM76L 345519 release-keys"
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := Full Android on Stingray
